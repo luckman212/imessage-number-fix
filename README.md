@@ -4,7 +4,7 @@
 
 This is a simple sledgehammer approach to fix a bug in macOS Big Sur that causes Notifications from Messages.app to display only the phone number for incoming messages (not the name from your Address Book).
 
-The script restarts (kickstarts) a handful of core services that, through trial and error, I determined to be associated with the local AddressBook database.
+The script restarts (kickstarts) a handful of core services that, through trial and error, I determined to be associated with the local AddressBook database. This script was tested on macOS 11.4, on an Intel Mac Mini.
 
 > ***N.B.*** Existing notifications are not updated, this only affects notifications that come in _after_ the script has been run.
 
