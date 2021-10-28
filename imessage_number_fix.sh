@@ -21,7 +21,7 @@ declare -a xpcArr=(
 
 for d in "${xpcArr[@]}"; do
 	echo -n "restarting $d"
-	read -r PID < <(launchctl kickstart -kp "$d")
+	read -r PID < <(launchctl kickstart -kp "$d" 2>/dev/null)
 	if [ -n "$PID" ]; then
 		echo " ✔ [$PID]"
 	else
